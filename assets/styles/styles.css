@@ -35,7 +35,7 @@ img {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background-color: transparent;
+    background-color: var(--primary);
 }
 
 .logo {
@@ -314,9 +314,10 @@ img {
 
 /* about */
 
-.about .content {
+.about {
     max-width: 1440px;
     margin: 0 auto;
+    padding: 90px 0;
 }
 
 .about .content .two-col-grid {
@@ -324,10 +325,24 @@ img {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 70px;
+    position: relative;
+    z-index: 2;
 }
 
 .about .content .two-col-grid img {
-    margin: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.about .content .two-col-grid::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    background-color: #4EA696;
+    width: calc(50% - 60px);
+    height: 100%;
+    z-index: 1;
 }
 
 .about .content .two-col-grid h1 {
