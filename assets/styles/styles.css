@@ -203,7 +203,7 @@ img {
     color: var(--text-color);
 }
 
-.home .content.btn a:nth-child(2)::before {
+.home .content .btn a:nth-child(2)::before {
     background: var(--secondary);
 }
 
@@ -358,6 +358,56 @@ img {
 
 .about .content .two-col-grid .intro{
     text-align: justify;
+}
+
+.about .content .two-col-grid .btn-cv {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    height: 50px;
+    margin-top: 24px;
+}
+
+.about .content .two-col-grid .btn-cv a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+    background: var(--secondary);
+    border: 2px solid var(--secondary);
+    border-radius: 8px;
+    font-size: 19px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.about .content .two-col-grid .btn-cv a:hover {
+    color: var(--tertiary);
+    background: transparent;
+}
+
+/* skills */
+
+.skills {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 90px 0;
+}
+
+.skills .content .container {
+    width: 100%;
+}
+
+.skills .content .container .row {
+    display: flex;
 }
 
 @keyframes showRight {
