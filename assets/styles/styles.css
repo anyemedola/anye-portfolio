@@ -361,12 +361,25 @@ img {
 }
 
 .about .content .two-col-grid .btn-cv {
+    margin-top: 24px;
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    width: 345px;
     height: 50px;
-    margin-top: 24px;
+}
+
+.about .content .two-col-grid .btn-cv::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary);
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+    z-index: 2;
 }
 
 .about .content .two-col-grid .btn-cv a {
@@ -374,7 +387,7 @@ img {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 100%;
     height: 100%;
     background: var(--secondary);
     border: 2px solid var(--secondary);
@@ -390,8 +403,23 @@ img {
 }
 
 .about .content .two-col-grid .btn-cv a:hover {
-    color: var(--tertiary);
-    background: transparent;
+    border: 2px solid var(--tertiary);
+}
+
+.about .content .two-col-grid .btn-cv a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--tertiary);
+    z-index: -1;
+    transition: .5s;
+}
+
+.about .content .two-col-grid .btn-cv a:hover::before {
+    width: 100%;
 }
 
 /* skills */
