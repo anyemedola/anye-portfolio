@@ -370,16 +370,11 @@ img {
 }
 
 .about .content .two-col-grid .btn-cv::before {
-    content: '';
-    position: absolute;
     top: 0;
     right: 0;
     width: 100%;
     height: 100%;
     background: var(--primary);
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.6s;
-    z-index: 2;
 }
 
 .about .content .two-col-grid .btn-cv a {
