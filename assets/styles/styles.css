@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --primary : #17000b;
+    --primary: #17000b;
     --text-color: #ededed;
-    --secondary : #890042;
+    --secondary: #890042;
     --tertiary: #4EA696;
 }
 
@@ -68,7 +68,8 @@ img {
     transition: .3s;
 }
 
-.navbar a:hover, .navbar a.active {
+.navbar a:hover,
+.navbar a.active {
     color: var(--secondary);
 }
 
@@ -351,12 +352,12 @@ img {
     color: var(--secondary);
 }
 
-.about .content .two-col-grid .intro{
+.about .content .two-col-grid .intro {
     color: var(--tertiary);
     font-weight: 700;
 }
 
-.about .content .two-col-grid .intro{
+.about .content .two-col-grid .intro {
     text-align: justify;
 }
 
@@ -420,17 +421,58 @@ img {
 /* skills */
 
 .skills {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 90px 0;
-}
-
-.skills .content .container {
     width: 100%;
+    min-height: 100vh;
+    padding: 30px 10%;
 }
 
-.skills .content .container .row {
+.skills .title {
+    max-width: 700px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.skills .title h1 {
+    position: relative;
+    font-size: 40px;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+
+.skills .title h1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 125%;
+    left: 0;
+    background: var(--secondary);
+}
+
+.skills .title h1::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    top: calc(125% - 1px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--tertiary);
+}
+
+.skills .content {
     display: flex;
+}
+
+.skills .content .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.skills .content .row .col {
+    flex-basis: 46%;
 }
 
 @keyframes showRight {
@@ -442,5 +484,59 @@ img {
 @keyframes manipActiveeHover {
     100% {
         pointer-events: auto;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .home .img-hover {
+        right: 0;
+        width: 400px;
+    }
+
+    .home .content h1,
+    h3,
+    p {
+        z-index: 2;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .home {
+        background: url('../images/background.png') no-repeat;
+        background-size: contain;
+        background-position: bottom;
+    }
+
+    .home .img-hover {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    .navbar a {
+        font-size: 8px !important;
+    }
+
+    .home .content p {
+        margin: 5px;
+    }
+
+    .home .content .btn {
+        width: 200px;
+        height: 30px;
+        justify-content: space-between;
+    }
+
+    .home .content .btn a {
+        font-size: 10px;
     }
 }
