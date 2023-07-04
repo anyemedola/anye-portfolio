@@ -529,7 +529,6 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 400%;
     height: 100%;
     -webkit-transition: left 0.4s;
     transition: left 0.4s;
@@ -854,6 +853,33 @@ textarea {
         background: url('../images/background.png') no-repeat;
         background-size: contain;
         background-position: bottom;
+        width: 100%;
+        padding: 10% 10%;
+    }
+
+    .home .content h1 {
+        font-size: 28px;
+    }
+
+    .home .content h3 {
+        font-size: 24px;
+    }
+
+    .home .content p {
+        font-size: 14px;
+    }
+
+    .home .content .btn {
+        display: flex;
+        flex-direction: column;
+        width: 345px !important;
+        height: 100px !important;
+    }
+
+    .home .content a {
+        width: 150px;
+        height: 50px;
+        margin: 5px;
     }
 
     .home .img-hover {
@@ -890,12 +916,71 @@ textarea {
     .about .content .two-col-grid::before {
         display: none;
     }
+
+    .work {
+        padding: 10% 10%;
+        height: 100vh;
+        margin-bottom: 120px;
+    }
+
+    .work .title h1 {
+        font-size: 24px;
+    }
+
+    .skills .title h1 {
+        font-size: 24px;
+    }
+
+    .contact-form .wrapper h2 {
+        font-size: 24px;
+    }
 }
 
 @media only screen and (max-width: 420px) {
 
-    .navbar a {
-        font-size: 8px !important;
+    /* Style the navigation menu */
+    .topnav {
+        overflow: hidden;
+        background-color: var(--primary);
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav .navbar {
+        display: none;
+    }
+
+    /* Style navigation menu links */
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        background: var(--secondary);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+        background-color: var(--tertiary);
+        color: var(--text-color);
+    }
+
+    /* Style the active link (or home/logo) */
+    .topnav .active {
+        background-color: var(--tertiary);
+        color: var(--text-color);
+    }
+
+    .header {
+        display: none;
     }
 
     .home .content p {
