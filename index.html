@@ -18,7 +18,7 @@
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About me</a>
-            <a href="">Work</a>
+            <a href="#work">Work</a>
             <a href="#skills">Skills</a>
             <a href="#contact-form">Contact</a>
         </nav>
@@ -86,6 +86,89 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="work" id="#work" alt="code by https://codepen.io/maheshambure21/pen/qZZrxy">
+        <div class="title">
+            <h1>My employment history</h1>
+            <p>Here's little bit of my history in the IT Industry</p>
+        </div>
+        <div class="slider">
+            <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav" />
+            <input type="radio" name="slider" title="slide2" class="slider__nav" />
+            <input type="radio" name="slider" title="slide3" class="slider__nav" />
+            <input type="radio" name="slider" title="slide4" class="slider__nav" />
+            <div class="slider__inner">
+                <div class="slider__contents">
+                    <div class="img"><img src="assets/images/employment/atitude_comunicacao.png" alt=""
+                            style="width: 100%;"></div>
+                    <h2 class="slider__caption">Atitude comunicação</h2>
+                    <p class="slider__txt">This was my first job, which initially began as an internship while I was
+                        pursuing my associate's degree. During this time, I gained valuable experience in web
+                        development by creating websites for the agency's clients using HTML, PHP, JavaScript, CSS, and
+                        PHP. As a full-stack developer, my responsibilities extended beyond coding. I also managed the
+                        server, handled emails, maintained the MySQL database, and provided customer support and
+                        training.</p>
+                </div>
+                <div class="slider__contents">
+                    <div class="img"><img src="assets/images/employment/agencia_zum.png" alt="" style="width: 100%;">
+                    </div>
+                    <h2 class="slider__caption">Agência Zum</h2>
+                    <p class="slider__txt">At Zum, an agency, I had the opportunity to work on two significant projects:
+                        Drograria Santa Marta and DreamStore.<br><br>
+
+                        For the Drograria Santa Marta project, we developed a campaign in partnership with the Federal
+                        Lottery of Raffles. I played a key role in creating a website using PHP, which included an
+                        administrative area for managing various aspects of the campaign. This involved features such as
+                        coupon registration, support for password changes, announcing winners, and describing the
+                        campaign details.<br><br>
+
+                        Additionally, I worked on the DreamStore project, an online children's toy store. I contributed
+                        to the year-end campaign, really similar with the Drograria Santa Marta project. </p>
+                </div>
+                <div class="slider__contents">
+                    <div class="img"><img src="assets/images/employment/s2pets.png" alt="" style="width: 100%;"></div>
+                    <h2 class="slider__caption">S2 Pets</h2>
+                    <p class="slider__txt">At S2 Pets, I had the opportunity to focus on frontend development. It was a
+                        pivotal point in my career where I worked extensively on enhancing an application for pet owners
+                        using Ionic with Angular. I collaborated on developing new features, improving the dashboard,
+                        and ensuring a seamless user experience.<br><br>
+
+                        Additionally, I took the initiative to design and develop the landing page for the application
+                        using Page. This involved creating an engaging and visually appealing interface to attract
+                        potential users.<br><br>
+
+                        Working at a startup provided me with valuable exposure to agile methodologies and sprint
+                        programs. I actively participated in agile practices and became familiar with using Jira as a
+                        project management tool.<br><br>
+
+                        This experience at S2 Pets marked my entry into the startup world and enriched my understanding
+                        of frontend development, agile workflows, and the importance of delivering a user-friendly
+                        experience.</p>
+                </div>
+                <div class="slider__contents">
+                    <div class="img"><img src="assets/images/employment/ambisig.jpeg" alt="" style="width: 100%;"></div>
+                    <h2 class="slider__caption">Ambisig</h2>
+                    <p class="slider__txt">Ambisig marked the beginning of my professional career and the fulfillment of
+                        a long-awaited dream. I was fortunate to secure a ten-month contract where I had the opportunity
+                        to work on two significant projects: Scot+ and Siarl.<br><br>
+
+                        Scot+ was a traffic fines application system, developed using React.js. My role involved
+                        designing and implementing various features to streamline the fine application process, ensuring
+                        efficiency and user-friendliness.<br><br>
+
+                        Additionally, I contributed to the development of Siarl, a coastal resource management system,
+                        also built with React.js. Within this project, I collaborated on creating functionalities that
+                        enabled effective management and monitoring of coastal resources, aiming for sustainable
+                        practices and environmental conservation.<br><br>
+
+                        These experiences at Ambisig allowed me to further enhance my skills in React.js development,
+                        while also gaining valuable insights into project management and teamwork. It was truly a
+                        stepping stone in my career and a realization of my professional aspirations.</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <div class="skills" id="skills">
@@ -191,7 +274,7 @@
         <div class="wrapper">
             <h2 class="heading">Let's Talk</h2>
             <form class="form" onsubmit="sendEmail(); reset(); return false;"">
-                <input type="text" placeholder="Name" id="name" required>
+                <input type=" text" placeholder="Name" id="name" required>
                 <input type="email" placeholder="Email" id="email" required />
                 <input type="text" placeholder="Subject" id="subject" required />
                 <textarea id="message" required></textarea>
