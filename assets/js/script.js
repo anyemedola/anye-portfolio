@@ -1,20 +1,12 @@
-const formHeading = document.querySelector(".form-heading");
-const formInputs = document.querySelectorAll(".contact-form-input");
+function sendEmail() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
 
-formInputs.forEach((input) => {
-  input.addEventListener("focus", () => {
-    formHeading.style.opacity = "0";
-    setTimeout(() => {
-      formHeading.textContent = `Your ${input.placeholder}`;
-      formHeading.style.opacity = "1";
-    }, 300);
-  });
+    var mailtoLink = 'mailto:anynhamedola@gmail.com' +
+        '?subject=' + encodeURIComponent(subject) +
+        '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message);
 
-  input.addEventListener("blur", () => {
-    formHeading.style.opacity = "0";
-    setTimeout(() => {
-      formHeading.textContent = "Let's Talk";
-      formHeading.style.opacity = "1";
-    }, 300);
-  });
-});
+    window.location.href = mailtoLink;
+}

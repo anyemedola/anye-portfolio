@@ -187,39 +187,20 @@
         </div>
     </div>
 
-    <div class="contact-form" id="#contact-form">
-
+    <div class="contact-form" id="contact-form">
         <div class="wrapper">
             <h2 class="heading">Let's Talk</h2>
-            <form class="form">
-              <input
-                type="text"
-                autocomplete="off"
-                placeholder="Name"
-                class="form-input"
-              />
-              <input
-                type="email"
-                autocomplete="off"
-                placeholder="Email"
-                class="form-input"
-              />
-              <input
-                type="text"
-                autocomplete="off"
-                placeholder="Subject"
-                class="form-input"
-              />
-              <textarea
-                class="form-input form-textarea"
-                placeholder="Message"
-              ></textarea>
-              <input type="submit" class="form-submit-btn" value="Email me" />
+            <form class="form" onsubmit="sendEmail(); reset(); return false;"">
+                <input type="text" placeholder="Name" id="name" required>
+                <input type="email" placeholder="Email" id="email" required />
+                <input type="text" placeholder="Subject" id="subject" required />
+                <textarea id="message" required></textarea>
+                <button type="submit">Send</button>
             </form>
-          </div>
-
+        </div>
     </div>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="assets/js/script.js"></script>
 
 </body>

@@ -571,7 +571,7 @@ img {
     width: 100%;
 }
 
-.contact-form .form .form-input {
+.contact-form .form input, textarea {
     width: 100%;
     height: 50px;
     padding: 0.5rem;
@@ -586,21 +586,22 @@ img {
     border-radius: 8px;
 }
 
-.contact-form .form .form-input:focus {
+.contact-form .form input:focus {
     color: var(--text-color);
     border: 0.1rem solid var(--text-color);
 }
 
-.contact-form .form .form-input::placeholder {
+.contact-form .form input::placeholder {
     color: var(--text-color);
 }
 
-.contact-form .form .form-textarea {
+.contact-form .form textarea {
     height: 300px;
     resize: none;
+    color: var(--text-color);
 }
 
-.contact-form .form .form-submit-btn {
+.contact-form .form button {
     position: relative;
     display: inline-flex;
     justify-content: center;
