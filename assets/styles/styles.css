@@ -510,20 +510,18 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.slider__image {
-  font-size: 2.7rem;
-      color: #2196F3;
+.slider__contents img {
+  border-radius: 50%;
 }
 .slider__caption {
   font-weight: 500;
   margin: 2rem 0 1rem;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  text-transform: uppercase;
 }
 .slider__txt {
   color: #999;
   margin-bottom: 3rem;
-  max-width: 300px;
+  max-width: 900px;
 }
 
 @-webkit-keyframes check {
@@ -548,10 +546,9 @@ img {
   }
 }
 
-
 .work {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     margin-bottom: 80px;
 }
 
@@ -905,8 +902,8 @@ textarea {
 
     .work {
         padding: 10% 10%;
-        height: 100vh;
-        margin-bottom: 120px;
+        height: 90vh;
+        margin-bottom: 50px;
     }
 
     .work .title h1 {
