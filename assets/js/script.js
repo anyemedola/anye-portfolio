@@ -1,15 +1,21 @@
-function sendEmail() {
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var subject = document.getElementById('subject').value;
-    var message = document.getElementById('message').value;
+var btn = document.getElementById('btn');
+btn.addEventListener('click', function (e) {
+  e.preventDefault()
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var subject = document.getElementById('subject').value;
+  var message = document.getElementById('message').value;
 
-    var mailtoLink = 'mailto:anynhamedola@gmail' +
-        '?subject=' + encodeURIComponent(subject) +
-        '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message);
-
-    window.location.href = mailtoLink;
-}
+  Email.send({
+    SecureToken: "c594caec-61b5-4a3c-8158-35cc210f4c28",
+    To: 'anynhamedola@gmail.com',
+    From: "anynhamedola@gmail.com",
+    Subject: subject,
+    Body: "My name is" + name + "<br/>" + email + "<br/>" + message
+  }).then(
+    message => alert(message)
+  );
+})
 
 const swiper = new Swiper('.swiper', {
   sliderPerView: 1,

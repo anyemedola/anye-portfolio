@@ -175,7 +175,7 @@
                         stepping stone in my career and a realization of my professional aspirations.</p>
                     <span class="name">Ambisig</span>
                 </div>
-            </div>  
+            </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
@@ -284,12 +284,12 @@
     <div class="contact-form" id="contact-form">
         <div class="wrapper">
             <h2 class="heading">Let's Talk</h2>
-            <form class="form" onsubmit="sendEmail(); reset(); return false;"">
+            <form class="form" method="post">
                 <input type=" text" placeholder="Name" id="name" required>
                 <input type="email" placeholder="Email" id="email" required />
                 <input type="text" placeholder="Subject" id="subject" required />
                 <textarea id="message" required></textarea>
-                <button type="submit">Send</button>
+                <button type="submit" id="btn">Send</button>
             </form>
         </div>
     </div>
