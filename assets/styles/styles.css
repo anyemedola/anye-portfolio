@@ -901,6 +901,7 @@ footer a {
     /* Hide the links inside the navigation menu (except for logo/home) */
     .topnav .navbar {
         display: none;
+        height: 100vh;
     }
 
     /* Style navigation menu links */
