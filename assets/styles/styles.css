@@ -500,7 +500,8 @@ img {
     color: var(--tertiary);
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
     color: var(--tertiary) !important;
 }
 
@@ -846,18 +847,30 @@ footer a {
         display: none;
     }
 
-    .work {
+    .my-work {
         padding: 10% 10%;
-        height: 120vh;
         margin-bottom: 50px;
     }
 
-    .work .title h1 {
+    .my-work .title h1 {
         font-size: 24px;
     }
 
-    .slider {
-        height: 110vh;
+    .my-work .content .work-content .slide {
+        row-gap: 10px;
+    }
+
+    .my-work .content .work-content .slide p {
+        padding: 0 12%;
+        font-size: 12px;
+    }
+
+    .my-work .content .work-content .slide img {
+        margin-top: 35px;
+    }
+
+    .swiper-pagination {
+        display: none;
     }
 
     .skills .title h1 {
