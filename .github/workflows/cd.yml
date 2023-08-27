@@ -31,3 +31,6 @@ jobs:
             git reset --hard
             git pull origin main
             git status
+            nvm use 16
+            npm i
+            npm run build
