@@ -65,10 +65,10 @@ function Contact() {
               <i className="bx bxl-instagram contact__card-icon"></i>
 
               <h3 className="contact_card-title">Instagram</h3>
-              <span className="contact_card-data">anyemedola</span>
+              <span className="contact_card-data">devanyelis</span>
 
               <a
-                href="https://www.instagram.com/anyemedola/"
+                href="https://www.instagram.com/devanyelis/"
                 className="contact_button"
                 target="_blank"
                 rel="noreferrer"
