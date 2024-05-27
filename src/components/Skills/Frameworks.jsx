@@ -38,8 +38,8 @@ function Frameworks() {
             <i class="bx bx-badge-check"></i>
 
             <div>
-              <h3 className="skills_name">Firebase</h3>
-              <span className="skills_level">Basic</span>
+              <h3 className="skills_name">Agile Methodology</h3>
+              <span className="skills_level">Advanced</span>
             </div>
           </div>
         </div>
@@ -59,15 +59,6 @@ function Frameworks() {
 
             <div>
               <h3 className="skills_name">Git</h3>
-              <span className="skills_level">Intermediate</span>
-            </div>
-          </div>
-
-          <div className="skills_data">
-            <i class="bx bx-badge-check"></i>
-
-            <div>
-              <h3 className="skills_name">MySql</h3>
               <span className="skills_level">Advanced</span>
             </div>
           </div>
@@ -76,8 +67,17 @@ function Frameworks() {
             <i class="bx bx-badge-check"></i>
 
             <div>
-              <h3 className="skills_name">React Native</h3>
+              <h3 className="skills_name">WebRTC</h3>
               <span className="skills_level">Intermediate</span>
+            </div>
+          </div>
+
+          <div className="skills_data">
+            <i class="bx bx-badge-check"></i>
+
+            <div>
+              <h3 className="skills_name">Styled Components</h3>
+              <span className="skills_level">Advanced</span>
             </div>
           </div>
         </div>
