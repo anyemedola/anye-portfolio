@@ -20,7 +20,7 @@ function Languages() {
             <i class="bx bx-badge-check"></i>
 
             <div>
-              <h3 className="skills_name">CSS</h3>
+              <h3 className="skills_name">CSS3</h3>
               <span className="skills_level">Advanced</span>
             </div>
           </div>
@@ -30,7 +30,7 @@ function Languages() {
 
             <div>
               <h3 className="skills_name">JavaScript</h3>
-              <span className="skills_level">Intermediate</span>
+              <span className="skills_level">Advanced</span>
             </div>
           </div>
           
@@ -38,7 +38,7 @@ function Languages() {
             <i class="bx bx-badge-check"></i>
 
             <div>
-              <h3 className="skills_name">Node.JS</h3>
+              <h3 className="skills_name">Swift</h3>
               <span className="skills_level">Basic</span>
             </div>
           </div>
@@ -67,8 +67,8 @@ function Languages() {
             <i class="bx bx-badge-check"></i>
 
             <div>
-              <h3 className="skills_name">JAVA</h3>
-              <span className="skills_level">Basic</span>
+              <h3 className="skills_name">Next.js</h3>
+              <span className="skills_level">Advanced</span>
             </div>
           </div>
 
@@ -77,7 +77,7 @@ function Languages() {
 
             <div>
               <h3 className="skills_name">JQuery</h3>
-              <span className="skills_level">Intermediate</span>
+              <span className="skills_level">Advanced</span>
             </div>
           </div>
         </div>
