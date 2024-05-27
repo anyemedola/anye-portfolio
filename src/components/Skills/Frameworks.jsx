@@ -11,8 +11,8 @@ function Frameworks() {
             <i class="bx bx-badge-check"></i>
 
             <div>
-              <h3 className="skills_name">BOOTSTRAP</h3>
-              <span className="skills_level">Basic</span>
+              <h3 className="skills_name">Figma</h3>
+              <span className="skills_level">Advanced</span>
             </div>
           </div>
 
